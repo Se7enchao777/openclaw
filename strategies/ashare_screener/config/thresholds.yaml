@@ -1,0 +1,40 @@
+weights:
+  leader: 0.35
+  momentum: 0.25
+  capital: 0.20
+  sector: 0.20
+
+market_gate:
+  min_zt_count: 50
+  min_zt_dt_ratio: 5.0
+  min_max_consec: 3
+  min_amount_yi: 8000
+
+blacklist:
+  min_circ_mv_wan: 200000
+  max_circ_mv_wan: 1500000
+  max_5d_return_pct: 60
+
+candidate:
+  first_zt_max_time_min: 30
+  min_seal_ratio_pct: 1.5
+  breakout_min_pct: 5.0
+  breakout_min_vol_ratio: 2.0
+  breakout_min_sector_zt: 3
+
+tier:
+  s_min_score: 80
+  a_min_score: 70
+  b_min_score: 60
+  max_s: 3
+  max_a: 5
+  max_b: 10
+
+plan:
+  s_position_pct: 25
+  a_position_pct: 12
+  bid_range_pct: [3.0, 7.0]
+  min_bid_pct: 1.0
+  max_bid_pct: 8.0
+  intraday_break_pct: 1.5
+  stop_loss_pct: -4
